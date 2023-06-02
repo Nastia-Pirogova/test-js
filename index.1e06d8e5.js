@@ -1,2 +1,0 @@
-!function(){var e=document.getElementById("dropdownMenuLibrary"),n=document.querySelector(".dropdown-toggle-library"),t=document.querySelector(".dropdown-menu-library");n.addEventListener("click",(function(){"none"===e.style.display||""===e.style.display?e.style.display="block":e.style.display="none"})),t.addEventListener("click",(function(e){var n=e.target;n&&(n.style.color="#F87719")}))}();
-//# sourceMappingURL=index.1e06d8e5.js.map
