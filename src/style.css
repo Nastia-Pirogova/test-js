@@ -428,7 +428,6 @@ p.descr-library {
 
   .cards-library-list {
     gap: 32px 15px;
-    /*width: 1216px;*/
   }
 
   .icon-card-start-inner-library {
@@ -444,3 +443,4 @@ p.descr-library {
     line-height: 36px;
   }
 }
+
