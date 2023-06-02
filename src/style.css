@@ -233,8 +233,60 @@ p.descr-library {
   border: var(--gradient-1);
 }
 
+.search-more{
+  padding: 12px 24px;
+  background-image: var(--gradient-1);
+  color: var(--black);
+  border-radius: 74px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 40px 0 16px 0;
+  border: var(--gradient-1);
+}
+
+.search-more:hover {
+  color: var(--orange);
+  background-color: var(--white);
+  background-image: none;
+  border: var(--gradient-1);
+}
+
 .dropdown-item-library:last-child {
   border: none;
+}
+.notify {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.empty-gallery {
+  text-align: center;
+  margin: 80px auto 20px auto;
+}
+
+.load-more-library{
+  margin: auto;
+  text-align: center;
+}
+
+.dropdown-toggle-library::before {
+  content: '';
+  position: absolute;
+  background-image: url(./images/chevron-down.svg);
+  bottom: 13px;
+  right: 14px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  opacity: 10;
+  fill: var(--white);
+  transition: transform 0.3s;
+}
+
+.dropdown-toggle-library.rotated::before{
+  transform: rotate(180deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -300,6 +352,13 @@ p.descr-library {
     font-size: 14px;
     line-height: 16px;
   }
+  .notify {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -366,7 +425,7 @@ p.descr-library {
 
   .cards-library-list {
     gap: 32px 15px;
-    width: 1216px;
+    /*width: 1216px;*/
   }
 
   .icon-card-start-inner-library {
@@ -375,5 +434,10 @@ p.descr-library {
 
   .card-start-inner-library {
     width: 106px;
+  }
+  .notify {
+    text-align: center;
+    font-size: 32px;
+    line-height: 36px;
   }
 }

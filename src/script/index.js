@@ -6,6 +6,9 @@ dropdownToggleLibrary.addEventListener('click', toggleDropdownLibrary);
 dropdownItemsLibrary.addEventListener('click', selectOptionLibrary);
 
 function toggleDropdownLibrary() {
+
+  dropdownToggleLibrary.classList.toggle('rotated');
+
   if (dropdownMenuLibrary.style.display === 'none' || dropdownMenuLibrary.style.display === '') {
     dropdownMenuLibrary.style.display = 'block';
   } else {

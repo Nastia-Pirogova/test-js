@@ -2,7 +2,7 @@
      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol id="icon-chevron-down" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round"
+      <path fill="fff" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round"
             stroke-miterlimit="4" stroke-width="2" d="M7 11.5l9 9 9-9"></path>
     </symbol>
     <symbol id="icon-close-outline" viewBox="0 0 32 32">
