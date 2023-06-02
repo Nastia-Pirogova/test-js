@@ -1,12 +1,13 @@
 let dropdownMenuLibrary = document.getElementById('dropdownMenuLibrary');
 let dropdownToggleLibrary = document.querySelector('.dropdown-toggle-library');
-let dropdownItemsLibrary = document.querySelector('.dropdown-menu-library');
+let dropdownItemsLibrary = document.querySelectorAll('.dropdown-item-library');
 
 dropdownToggleLibrary.addEventListener('click', toggleDropdownLibrary);
-dropdownItemsLibrary.addEventListener('click', selectOptionLibrary);
+dropdownItemsLibrary.forEach(function(item) {
+  item.addEventListener('click', selectOptionLibrary);
+});
 
 function toggleDropdownLibrary() {
-
   dropdownToggleLibrary.classList.toggle('rotated');
 
   if (dropdownMenuLibrary.style.display === 'none' || dropdownMenuLibrary.style.display === '') {
@@ -18,7 +19,16 @@ function toggleDropdownLibrary() {
 
 function selectOptionLibrary(e) {
   let selectedOptionLibrary = e.target;
-  if (selectedOptionLibrary) {
-    selectedOptionLibrary.classList.toggle('.dropdown-item-library-color');
-  }
+
+
+  dropdownItemsLibrary.forEach(function(item) {
+    item.classList.remove('dropdown-item-library-color');
+  });
+
+
+  selectedOptionLibrary.classList.add('dropdown-item-library-color');
+
+  dropdownToggleLibrary.textContent = selectedOptionLibrary.textContent;
+
+  dropdownMenuLibrary.style.display = 'none';
 }
