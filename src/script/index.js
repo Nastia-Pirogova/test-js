@@ -19,6 +19,6 @@ function toggleDropdownLibrary() {
 function selectOptionLibrary(e) {
   let selectedOptionLibrary = e.target;
   if (selectedOptionLibrary) {
-    selectedOptionLibrary.style.color = '#F87719';
+    selectedOptionLibrary.toggle.style.color = '#F87719';
   }
 }
