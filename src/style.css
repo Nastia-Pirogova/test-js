@@ -1,0 +1,379 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--black);
+  color: var(--white);
+}
+
+:root {
+  --black: #111111;
+  --gray-dark: #282828;
+  --gray: #595959;
+  --gray-light: #B7B7B7;
+  --white: #FFFFFF;
+  --silver: #F8F8F8;
+  --orange: #F87719;
+  --gradient-1: linear-gradient(141.22deg, #FFC226 9.4%, #F84119 91.91%);
+  --gradient-2: linear-gradient(141.22deg, #F84119 9.4%, rgba(248, 159, 25, 0.68) 91.91%);
+}
+
+::selection {
+  background-color: var(--gray);
+  color: var(--silver);
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+
+a {
+  color: var(--black);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*------------------------------------------*/
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: auto;
+}
+
+/*------------------------------------------*/
+.hero-library {
+  background-image: linear-gradient(79.39deg, #111111 32.37%, rgba(17, 17, 17, 0) 72.02%), url(./images/hero-bg-library.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-box {
+  width: 249px;
+  padding: 40px 0 144px;
+}
+
+h1.title-library {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 8px;
+}
+
+p.descr-library {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/*------------------------------------------*/
+
+
+.dropdown-library {
+  margin: 40px 0 16px;
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-toggle-library {
+  padding: 10px 56px 10px 16px;
+  width: 173px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: var(--black);
+  border: 1px solid var(--white);
+}
+
+
+.dropdown-menu-library {
+  width: 172px;
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  z-index: 5000;
+  border-radius: 8px;
+  display: none;
+  position: absolute;
+}
+
+.dropdown-item-library {
+  cursor: pointer;
+  border-bottom: 1px solid var(--white);
+  width: 100%;
+  padding: 14px 66px 10px 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.dropdown-item-library:hover {
+  color: var(--orange);
+}
+
+.dropdown-item-library:active {
+  color: var(--orange);
+}
+
+
+/*------------------------------------------*/
+
+.card-library {
+  width: 280px;
+  height: 406px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+.cards-library-list {
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card-inner-library {
+  width: 100%;
+  background-image: linear-gradient(#0000 63.48%, #000000e6 92.16%);
+  padding: 160px 12px 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-title-inner-library {
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.card-descr-inner-library {
+  color: var(--gray-light);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.card-start-inner-library {
+  width: 106px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card-descr-inner-library-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-card-start-inner-library {
+  fill: var(--orange);
+  height: 14px;
+}
+
+.cards-btn-library {
+  padding: 12px 24px;
+  background-image: var(--gradient-1);
+  color: var(--black);
+  border-radius: 74px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 40px 0 16px 0;
+  border: var(--gradient-1);
+}
+
+.cards-btn-library:hover {
+  color: var(--orange);
+  background-color: var(--white);
+  background-image: none;
+  border: var(--gradient-1);
+}
+
+.dropdown-item-library:last-child {
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+  .hero-box {
+    width: 357px;
+    padding: 62px 0 118px;
+  }
+
+  h1.title-library {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  .dropdown-toggle-library {
+    padding: 12px 60px 12px 20px;
+    width: 144px;
+  }
+
+  .dropdown-item-library {
+    padding: 14px 66px 14px 20px;
+  }
+
+  .dropdown-menu-library {
+    width: 144px;
+  }
+
+  .cards-library-list {
+    gap: 28px 16px;
+  }
+
+  .card-library {
+    width: 224px;
+    height: 325px;
+  }
+
+  .card-title-inner-library {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .card-descr-inner-library {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .card-start-inner-library {
+    width: 66px;
+  }
+
+  .icon-card-start-inner-library {
+    height: 10px;
+  }
+
+  .dropdown-library {
+    margin: 60px 0 36px;
+  }
+
+  button.cards-btn-library {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1216px;
+  }
+
+  h1.title-library {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 16px;
+  }
+
+  p.descr-library {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .hero-box {
+    padding: 169px 0 249px 0;
+    width: 464px;
+    margin-left: 85px;
+  }
+
+  .dropdown-library {
+    margin: 128px 0 48px 0;
+  }
+
+  .dropdown-toggle-library {
+    padding: 12px 188px 12px 20px;
+    width: 260px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .dropdown-item-library {
+    padding: 14px 66px 14px 20px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .dropdown-menu-library {
+    width: 260px;
+  }
+
+  .card-library {
+    width: 394px;
+    height: 574px;
+  }
+
+  .card-inner-library {
+    padding: 160px 20px 20px 20px;
+  }
+
+  .card-title-inner-library {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card-descr-inner-library {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .cards-library-list {
+    gap: 32px 15px;
+    width: 1216px;
+  }
+
+  .icon-card-start-inner-library {
+    height: 18px;
+  }
+
+  .card-start-inner-library {
+    width: 106px;
+  }
+}
